@@ -1,4 +1,4 @@
-package org.centrale.medev;
+package org.centrale.medev.util;
 
 import java.io.*;
 

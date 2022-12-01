@@ -1,5 +1,7 @@
 package org.centrale.medev;
 
+import org.centrale.medev.util.ReadPGM;
+
 import java.io.IOException;
 
 public class Test {
@@ -7,7 +9,6 @@ public class Test {
 
         //read image
         int data2D[][] = ReadPGM.ReadImage("./images/baboon.pgm");
-
 
 
         for (int row = 0; row < data2D.length; row++) {
