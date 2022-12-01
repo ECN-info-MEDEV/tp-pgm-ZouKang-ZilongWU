@@ -5,8 +5,9 @@ import java.io.*;
 public class ReadPGM {
 
     /**
-     * Read pgm image.
-     * @param filePath the path of pgm image
+     * Read image.
+     * @param filePath image path
+     * @return data[][]
      * @throws IOException
      */
     public static int[][] ReadImage(String filePath) throws IOException {
