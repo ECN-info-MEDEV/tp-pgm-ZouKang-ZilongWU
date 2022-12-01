@@ -24,16 +24,26 @@ public class ReadPGM {
         String[] sizeArray = sizeStr.split("\s+");
 
         int picWidth = Integer.parseInt(sizeArray[0]);
+        System.out.print(picWidth+" ");
         int picHeight = Integer.parseInt(sizeArray[1]);
+        System.out.println(picHeight);
+        int maxValue = Integer.parseInt(bufferedReader.readLine());
+        System.out.println(maxValue);
 
+        System.out.println("sfd "+bufferedReader.read());
         int[][] data2D = new int[picWidth][picHeight];
-        for (int row = 0; row < picHeight; row++) {
-            for (int col = 0; col < picWidth; col++) {
+
+        for (int row = 0; row < picWidth; row++) {
+            for (int col = 0; col < picHeight; col++) {
                 data2D[row][col] = bufferedReader.read();
+                System.out.print(data2D[row][col]+" ");
             }
+            System.out.println();
         }
 
         fileInputStream.close();
         return data2D;
     }
+
+
 }
