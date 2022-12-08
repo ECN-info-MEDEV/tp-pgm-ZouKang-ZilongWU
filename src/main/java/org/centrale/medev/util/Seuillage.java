@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Seuillage {
     // Set minimum and maximum brightness
     public static int[][] AfterThreshold(String filePath, int minimum, int maximum) throws IOException {
-        int[][] Original = ReadPGM.ReadImage("./images/baboon.pgm");
+        int[][] Original = ReadPGM.ReadImage(filePath);
         int[][] imgThreshold = new int[Original.length][Original[0].length];
         for (int rowCount = 0; rowCount < (Original.length); rowCount++) {       // chose one row
             int[] Row = new int[Original[0].length];
